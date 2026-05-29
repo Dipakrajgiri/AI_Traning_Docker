@@ -22,14 +22,10 @@ app = FastAPI(title="InvenTrack API")
 # In Render, set:  CORS_ORIGINS=https://your-app.vercel.app
 # Locally it falls back to localhost so dev still works.
 # ---------------------------------------------------------------------------
-_raw_origins = os.environ.get(
-    "CORS_ORIGINS", "http://localhost:5173,http://localhost:3000,https://ai-traning-docker-irowv5kig-giriakki742-9448s-projects.vercel.app,https://ai-traning-docker-jrce5yobc-giriakki742-9448s-projects.vercel.app"
-)
-ALLOWED_ORIGINS: list[str] = [o.strip() for o in _raw_origins.split(",") if o.strip()]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=ALLOWED_ORIGINS,
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
