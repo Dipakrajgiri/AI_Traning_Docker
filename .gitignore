@@ -1,0 +1,45 @@
+# ─── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# ─── Environment / Secrets ───────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+
+# ─── Database files ──────────────────────────────────────────────────────────
+*.db
+*.sqlite3
+
+# ─── Node / Frontend ─────────────────────────────────────────────────────────
+node_modules/
+frontend/dist/
+frontend/.vercel/
+
+# ─── Editors / OS ────────────────────────────────────────────────────────────
+.DS_Store
+.vscode/
+.idea/
+Thumbs.db
+
+# ─── Docker ──────────────────────────────────────────────────────────────────
+*.log
+
+# ─── Testing ─────────────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
