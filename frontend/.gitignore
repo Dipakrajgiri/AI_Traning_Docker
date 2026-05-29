@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment variables – never commit real secrets
+.env
+.env.local
+.env.*.local
+
+# Vercel local state
+.vercel/
+
+# v0 sandbox internal files
+__v0_runtime_loader.js
+__v0_devtools.tsx
+__v0_jsx-dev-runtime.ts
+.snowflake/
+.v0-trash/
+
+# OS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Next.js (not used here, kept for safety)
+.next/
