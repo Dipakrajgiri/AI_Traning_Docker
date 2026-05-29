@@ -23,7 +23,7 @@ app = FastAPI(title="InvenTrack API")
 # Locally it falls back to localhost so dev still works.
 # ---------------------------------------------------------------------------
 _raw_origins = os.environ.get(
-    "CORS_ORIGINS", "http://localhost:5173,http://localhost:3000"
+    "CORS_ORIGINS", "http://localhost:5173,http://localhost:3000,https://ai-traning-docker-irowv5kig-giriakki742-9448s-projects.vercel.app"
 )
 ALLOWED_ORIGINS: list[str] = [o.strip() for o in _raw_origins.split(",") if o.strip()]
 
